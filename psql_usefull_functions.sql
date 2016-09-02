@@ -15,3 +15,6 @@ BEGIN
 RETURN v_int_value;
 END;
 $$ LANGUAGE plpgsql;
+
+SELECT stringInt_to_integer(str)
+FROM (VALUES ('1'), ('-2'), ('3a')) AS a(str)
