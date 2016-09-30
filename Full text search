@@ -1,1 +1,13 @@
-fts_helpers
+# fts_helpers
+Document - is raw text stored in column.
+
+## Preprocessing before searching
+- defining *tokens* (tokens - word, charactesrs, digits)
+- converting *tokens* into *lexemes* (lexem - it is normalized token)
+
+## Basic search
+Search uses operator `@@`.
+`tsvector @@ tsquery`
+
+** tsquery **
+tsquery contains normalized *lexemes*
